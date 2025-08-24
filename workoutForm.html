@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymRat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button id="cancel">Cancel</button>
+      <h1>New Routine</h1>
+      <button id="save">Save</button>
+    </header>
+    <main>
+      <form id="workout-form">
+        <label>
+          Exercise Name:
+          <input type="text" id="exercise-name" required />
+        </label>
+
+        <label>
+          Sets:
+          <input type="number" id="sets" min="1" required />
+        </label>
+
+        <label>
+          Reps:
+          <input type="number" id="reps" min="1" required />
+        </label>
+
+        <label>
+          Weight (kg):
+          <input type="number" id="weight" min="0" required />
+        </label>
+
+        <button type="submit">Add Workout</button>
+      </form>
+      <div id="myRoutines"></div>
+    </main>
+  </body>
+</html>
